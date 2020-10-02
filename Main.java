@@ -17,26 +17,21 @@ public class Main {
   
         // traverse array elements 
         for (int i = 0; i < n; i++) { 
-            // at even index : we have to put 
-            // maximum element 
             if (i % 2 == 0) { 
                 arr[i] += (arr[max_idx] % max_elem) * max_elem; 
                 max_idx--; 
             } 
   
-            // at odd index : we have to put minimum element 
             else { 
                 arr[i] += (arr[min_idx] % max_elem) * max_elem; 
                 min_idx++; 
             } 
         } 
   
-        // array elements back to it's original form 
         for (int i = 0; i < n; i++) 
             arr[i] = arr[i] / max_elem; 
     } 
   
-    // Driver code 
     public static void main(String args[]) 
     { 
         int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 }; 
@@ -54,4 +49,3 @@ public class Main {
     } 
 } 
   
-// This code is contributed by Swetank Modi
