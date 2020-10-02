@@ -46,6 +46,8 @@ public class Main {
         System.out.print("\nModified Array\n"); 
         for (int i = 0; i < n; i++) 
             System.out.print(arr[i] + " "); 
+      System.out.println("Max element is "arr[0] + " ");
+      System.out.println("Min element is "arr[1] + " ");
     } 
 } 
   
