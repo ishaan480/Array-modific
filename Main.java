@@ -27,6 +27,13 @@ public class Main {
                 min_idx++; 
             } 
         } 
+      
+      # A for loop can be added for better optimization
+        
+        for (int i =0 ; i<n; i++)
+        {
+          arr[i] = arr[i] + 1;
+        }
   
         for (int i = 0; i < n; i++) 
             arr[i] = arr[i] / max_elem; 
